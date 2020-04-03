@@ -7,7 +7,7 @@ export let config: Config={
     seleniumAddress: 'http://localhost:4444/wd/hub',
     suites : {
       mySuite: [
-          //'./specs/Login-Test.js',
+          './specs/Login-Test.js',
          './specs/PhysicianSearch-Test.js'
       ]},
     capabilities: {
@@ -20,7 +20,7 @@ export let config: Config={
         jasmine.getEnv().addReporter(new HtmlReporter({baseDirectory:'Reports',preserveDirectory: false}).getJasmine2Reporter());
         jasmine.getEnv().addReporter(new SpecReporter({
           spec: {
-              displayStacktrace: true
+              displayStacktrace: false
           }
       }))
     },

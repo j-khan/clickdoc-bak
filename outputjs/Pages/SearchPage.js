@@ -118,6 +118,7 @@ var SearchPage = /** @class */ (function () {
         expect(protractor_1.element(protractor_1.by.xpath('//*[@id="search"]/div/div[3]/div/div/div/a')).isPresent()).toBeTruthy();
         protractor_1.element(protractor_1.by.xpath('//*[@id="search"]/div/div[3]/div/div/div/a')).click();
         protractor_1.browser.waitForAngular();
+        protractor_1.browser.sleep(5000);
     };
     SearchPage.prototype.ScrollTopEntervalidLocationInput = function (var_args) {
         protractor_1.browser.executeScript('window.scrollTo(0,0);');
@@ -140,6 +141,7 @@ var SearchPage = /** @class */ (function () {
         this.SerachButton.click();
         protractor_1.browser.waitForAngular();
         expect(this.SearchDefaultPanel.count()).toBeGreaterThan(1);
+        protractor_1.browser.sleep(5000);
     };
     SearchPage.prototype.SearchVideoConfAvailability = function () {
         protractor_1.element(protractor_1.by.className("custom-control custom-checkbox d-flex video-label text-alignment-center")).click();
@@ -184,6 +186,7 @@ var SearchPage = /** @class */ (function () {
         expect(description.element(protractor_1.by.className("description-text")).isPresent()).toBeTruthy();
         var physicianCalendar = first.element(protractor_1.by.className("physician-calendar"));
         expect(description.isPresent()).toBeTruthy();
+        protractor_1.element(protractor_1.by.className("row mb-4 ng-star-inserted")).click();
     };
     SearchPage.prototype.SortingWithAlphaSortAtoZ = function () {
         protractor_1.element(protractor_1.by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[2]/app-sort/div/div/div[3]/div/div')).click();
@@ -191,8 +194,6 @@ var SearchPage = /** @class */ (function () {
         protractor_1.browser.sleep(15000);
     };
     SearchPage.prototype.SortingWithAlphaSortZtoA = function () {
-        //let sort = element(by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[2]/app-sort/div/div/div[3]/div/div'));
-        //sort.all(by.className('p-2')).get(1).click();
         protractor_1.browser.executeScript("document.querySelector(\"#descending\").click()");
         protractor_1.browser.waitForAngular();
         protractor_1.browser.sleep(15000);
@@ -202,15 +203,26 @@ var SearchPage = /** @class */ (function () {
         this.SetSearchLocationTypeahead(location);
         this.SerachButton.click();
         protractor_1.browser.waitForAngular();
-        protractor_1.element(protractor_1.by.xpath('/html/body/app-root/div[2]/div/app-search/div/div/div/div[2]/div[2]/div[2]/app-sort/div/div/div[4]/div/div/input')).click();
+        protractor_1.browser.sleep(15000);
         var slider = protractor_1.element(protractor_1.by.className('custom-slider'));
+        protractor_1.browser.actions().
+            mouseDown(slider).
+            mouseMove(slider).
+            mouseMove({ x: 0, y: 0 }).
+            perform();
+        protractor_1.browser.sleep(5000);
+        protractor_1.browser.actions().
+            mouseMove(slider).
+            mouseMove({ x: 25, y: 0 }).
+            perform();
+        protractor_1.browser.sleep(5000);
         protractor_1.browser.actions().
             mouseMove(slider).
             mouseMove({ x: 100, y: 0 }).
-            doubleClick().
+            mouseUp(slider).
             perform();
         protractor_1.browser.waitForAngular();
-        protractor_1.browser.sleep(150000);
+        protractor_1.browser.sleep(10000);
     };
     return SearchPage;
 }());

@@ -16,6 +16,9 @@ describe('UI Automation testing of ClickDOc Application', function(){
   it("Open Login Page",  function(){
     loginPage.OpenLoginWindow();
   })
+  it('Verify Login Page Element',function(){
+    loginPage.VerifyElementPresentOnLoginPage()
+  })
   it("Login with Empty Credentials", function () {
     loginPage.LoginReject();
   })

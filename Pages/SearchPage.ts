@@ -134,10 +134,10 @@ export class SearchPage {
         expect(element(by.xpath('//*[@id="search"]/div/div[3]/div/div/div/a')).isPresent()).toBeTruthy();
         element(by.xpath('//*[@id="search"]/div/div[3]/div/div/div/a')).click();
         browser.waitForAngular();
+        browser.sleep(5000);
       }
 
       ScrollTopEntervalidLocationInput (var_args: string): void {
-    
         browser.executeScript('window.scrollTo(0,0);');
         this.SetSearchLocationTypeahead(var_args);
         let searchElement =  element(by.className('locationSearch typeahead-wrapper'));
@@ -161,6 +161,7 @@ export class SearchPage {
         this.SerachButton.click();
         browser.waitForAngular();
         expect(this.SearchDefaultPanel.count()).toBeGreaterThan(1);
+        browser.sleep(5000);
        
     }
     SearchVideoConfAvailability(){
@@ -207,6 +208,7 @@ SearchBarrierFreeAvailability(){
         expect(description.element(by.className("description-text")).isPresent()).toBeTruthy();
         let physicianCalendar = first.element(by.className("physician-calendar"));
         expect(description.isPresent()).toBeTruthy();
+        element(by.className("row mb-4 ng-star-inserted")).click();
         
 }
 SortingWithAlphaSortAtoZ(){
@@ -216,28 +218,39 @@ browser.sleep(15000);
 
 }
 SortingWithAlphaSortZtoA(){
-    //let sort = element(by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[2]/app-sort/div/div/div[3]/div/div'));
-    //sort.all(by.className('p-2')).get(1).click();
+    
     browser.executeScript(`document.querySelector("#descending").click()`);
     
     browser.waitForAngular();
     browser.sleep(15000);   
 }
 DragRangeSlider(searchText: string, location: string): void {
+  
     this.SetSearchQueryTypeahead(searchText);
     this.SetSearchLocationTypeahead(location);
     this.SerachButton.click();
     browser.waitForAngular();
-    element(by.xpath('/html/body/app-root/div[2]/div/app-search/div/div/div/div[2]/div[2]/div[2]/app-sort/div/div/div[4]/div/div/input')).click();
-    var slider = element(by.className('custom-slider'));
-
-    browser.actions().
+    browser.sleep(15000);
+    var slider = element(
+        by.className('custom-slider'));
+        browser.actions().
+        mouseDown(slider).
         mouseMove(slider).
-        mouseMove({ x: 100, y: 0 }).
-        doubleClick().
+        mouseMove({x: 0, y: 0}).
         perform();
-        browser.waitForAngular();
-        browser.sleep(150000);
+        browser.sleep(5000);
+        browser.actions().
+        mouseMove(slider).
+        mouseMove({x: 25, y: 0}).
+        perform();
+        browser.sleep(5000);
+        browser.actions().
+        mouseMove(slider).
+        mouseMove({x: 100, y: 0}).
+        mouseUp(slider).
+        perform();
+    browser.waitForAngular();
+    browser.sleep(10000);
 }
 
 }

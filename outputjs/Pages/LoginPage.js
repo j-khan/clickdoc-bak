@@ -5,12 +5,23 @@ var LoginPage = /** @class */ (function () {
     function LoginPage() {
         this.Email = protractor_1.element(protractor_1.by.xpath('//*[@id="mat-input-0"]'));
         this.Password = protractor_1.element(protractor_1.by.xpath('//*[@id="mat-input-1"]'));
+        this.CloseIcon = protractor_1.element(protractor_1.by.xpath('/html/body/app-iframe-dialog/div/div/div/span'));
+        this.RegistrationButton = protractor_1.element(protractor_1.by.className('life-btn life-secondary-btn'));
+        this.ForgotPasswordButton = protractor_1.element(protractor_1.by.className('link margin-top-15'));
         this.LoginButton = protractor_1.element(protractor_1.by.xpath('/html/body/app-root/div/div/main/app-login/div/div[1]/div/div/div[2]/div[2]/div[2]/button'));
         this.InvalidCredentialsMessage = protractor_1.element(protractor_1.by.xpath('/html/body/app-root/div/div/main/app-login/div/div[1]/div/div/div[2]/div[1]/div[1]/div/app-error-message/div'));
         this.ProfileLink = protractor_1.element(protractor_1.by.linkText('Profil'));
         this.AccountProfileLink = protractor_1.element(protractor_1.by.xpath('/html/body/app-root/div[2]/app-header/div/div[2]/div/div[2]/ul/li[7]/a/app-avatar/div'));
         this.LogOutLink = protractor_1.element(protractor_1.by.xpath('/html/body/app-root/div[2]/app-header/div/div[2]/div/div[2]/ul/li[7]/div/div/a[2]/div/span[2]'));
     }
+    LoginPage.prototype.VerifyElementPresentOnLoginPage = function () {
+        expect(this.CloseIcon.isPresent());
+        expect(this.Email.isPresent());
+        expect(this.Password.isPresent());
+        expect(this.ForgotPasswordButton.isPresent());
+        expect(this.RegistrationButton.isPresent());
+        expect(this.LoginButton.isPresent());
+    };
     LoginPage.prototype.SetEmail = function (var_args) {
         this.Email.clear();
         this.Email.sendKeys(var_args);
