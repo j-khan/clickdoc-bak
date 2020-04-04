@@ -10,27 +10,27 @@ describe('Searching Mechanism', function(){
               browser.waitForAngularEnabled(false);
               jasmine.DEFAULT_TIMEOUT_INTERVAL = 1000000;
           })
-    it('Open Home Page',function(){
+    it('Open Home Page',function(){ /* Open Home page so User can move to Search Section */
         openBasePage.VerifyPageOpen();
     })
-    it('Moved to Search Section',function(){
+    it('Moved to Search Section',function(){  /* User Clicked on serach section and now Search page is Open */
         searchPage.OpenSearchPage()
       })
    })
    describe('Verify Search Section',function(){
   
-     it('Verify Specialisation/Name Inputfield',function(){
+     it('Verify Specialisation/Name Inputfield',function(){ /* Verify Specialisation name Field is present on page */
       searchPage.VerifySpecialisation()
           })
     
-  it('Verify Location Input Field', function () {
+  it('Verify Location Input Field', function () { /* Verify location Field is present on page */ 
     searchPage.VerifyLocationInputField();
   })
 
-  it('Verify Online Bookable CheckBox', function () {
+  it('Verify Online Bookable CheckBox', function () { /* Verify Online Bookable filter is present on page */
     searchPage.VerifyOnlineBookableCheckBox();
   })
-  it('Verify Video Conference CheckBox', function () {
+  it('Verify Video Conference CheckBox', function () { /* Verify Video Conference filter is present on page */
     searchPage.VerifyVideoConferenceCheckBox();
   })
   it('Verify Barrier-Free CheckBox', function () {
