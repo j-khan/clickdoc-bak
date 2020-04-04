@@ -22,8 +22,7 @@ describe('Searching Mechanism', function(){
      it('Verify Specialisation/Name Inputfield',function(){
       searchPage.VerifySpecialisation()
           })
-          
-
+    
   it('Verify Location Input Field', function () {
     searchPage.VerifyLocationInputField();
   })
