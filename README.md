@@ -1,4 +1,4 @@
-# UI Automation of ClickDOC Application (Login and Search Page only)
+# UI Automation of ClickDOC Application (Login Page only)
 
 ## Pre-req to run this code are:
 
