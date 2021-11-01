@@ -275,620 +275,145 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": true,
         "pending": false,
         "os": "Mac OS X",
-        "instanceId": 51578,
+        "instanceId": 22389,
         "browser": {
             "name": "chrome",
-            "version": "80.0.3987.163"
+            "version": "95.0.4638.54"
         },
         "message": "Passed.",
         "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "007500a7-0089-0091-00a6-00bb006c00f8.png",
-        "timestamp": 1585941586149,
-        "duration": 2372
+        "browserLogs": [
+            {
+                "level": "WARNING",
+                "message": "https://demo.clickdoc.de/cd-de/main.7e3a0ede042d7a2333d2.js 0:454390 \"Piwik not found\"",
+                "timestamp": 1635760957300,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "00fe0064-0096-008d-0083-00e900c500c5.png",
+        "timestamp": 1635760956372,
+        "duration": 4126
     },
     {
         "description": "Open Login Page|UI Automation testing of ClickDOc Application",
         "passed": true,
         "pending": false,
         "os": "Mac OS X",
-        "instanceId": 51578,
+        "instanceId": 22389,
         "browser": {
             "name": "chrome",
-            "version": "80.0.3987.163"
+            "version": "95.0.4638.54"
         },
         "message": "Passed",
         "browserLogs": [],
-        "screenShotFile": "002c00b4-009b-00ad-0060-00f80023004f.png",
-        "timestamp": 1585941589320,
-        "duration": 17756
+        "screenShotFile": "002e005c-00b5-000c-00d9-00a3002500d1.png",
+        "timestamp": 1635760960984,
+        "duration": 3424
     },
     {
         "description": "Verify Login Page Element|UI Automation testing of ClickDOc Application",
         "passed": true,
         "pending": false,
         "os": "Mac OS X",
-        "instanceId": 51578,
+        "instanceId": 22389,
         "browser": {
             "name": "chrome",
-            "version": "80.0.3987.163"
+            "version": "95.0.4638.54"
         },
         "message": "Passed",
         "browserLogs": [],
-        "screenShotFile": "00a800f7-0057-000e-00ff-00cd00b40077.png",
-        "timestamp": 1585941607715,
-        "duration": 84
+        "screenShotFile": "0068000c-009f-0099-00e0-007a009600d8.png",
+        "timestamp": 1635760964906,
+        "duration": 80
     },
     {
         "description": "Login with Empty Credentials|UI Automation testing of ClickDOc Application",
         "passed": true,
         "pending": false,
         "os": "Mac OS X",
-        "instanceId": 51578,
+        "instanceId": 22389,
         "browser": {
             "name": "chrome",
-            "version": "80.0.3987.163"
+            "version": "95.0.4638.54"
         },
-        "message": "Passed",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-        "screenShotFile": "00550011-0017-000a-0088-00ea00060053.png",
-        "timestamp": 1585941608401,
-        "duration": 15222
+        "screenShotFile": "0056008c-008e-00a3-0028-00f000930039.png",
+        "timestamp": 1635760965448,
+        "duration": 3175
     },
     {
-        "description": "Login with valid e-mail|UI Automation testing of ClickDOc Application",
+        "description": "Login with valid Email only|UI Automation testing of ClickDOc Application",
         "passed": true,
         "pending": false,
         "os": "Mac OS X",
-        "instanceId": 51578,
+        "instanceId": 22389,
         "browser": {
             "name": "chrome",
-            "version": "80.0.3987.163"
+            "version": "95.0.4638.54"
         },
         "message": "Passed",
         "browserLogs": [],
-        "screenShotFile": "005b003d-009c-0019-00e0-00d500f000ff.png",
-        "timestamp": 1585941624359,
-        "duration": 422
+        "screenShotFile": "0039001d-00c9-0090-00f6-0077006d000f.png",
+        "timestamp": 1635760969079,
+        "duration": 208
     },
     {
-        "description": "Login with Valid Email and Wrong password |UI Automation testing of ClickDOc Application",
+        "description": "Login with Valid Email and Incorrect password |UI Automation testing of ClickDOc Application",
         "passed": true,
         "pending": false,
         "os": "Mac OS X",
-        "instanceId": 51578,
+        "instanceId": 22389,
         "browser": {
             "name": "chrome",
-            "version": "80.0.3987.163"
+            "version": "95.0.4638.54"
         },
-        "message": "Passed",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-        "screenShotFile": "004400f3-000b-003d-00ca-003a00fc004d.png",
-        "timestamp": 1585941625381,
-        "duration": 448
+        "screenShotFile": "00fd0043-00b2-00a0-0065-00c9004f003b.png",
+        "timestamp": 1635760969778,
+        "duration": 2305
     },
     {
         "description": "Login is Invalid Credential|UI Automation testing of ClickDOc Application",
         "passed": true,
         "pending": false,
         "os": "Mac OS X",
-        "instanceId": 51578,
+        "instanceId": 22389,
         "browser": {
             "name": "chrome",
-            "version": "80.0.3987.163"
+            "version": "95.0.4638.54"
         },
         "message": "Passed",
         "browserLogs": [],
-        "screenShotFile": "00180097-004f-0030-00db-00910041002c.png",
-        "timestamp": 1585941626459,
-        "duration": 10530
+        "screenShotFile": "00ab002f-0014-00f6-0031-003500a60099.png",
+        "timestamp": 1635760972513,
+        "duration": 5267
     },
     {
-        "description": "Logi with Valid Credential|UI Automation testing of ClickDOc Application",
+        "description": "Login with Valid Credential|UI Automation testing of ClickDOc Application",
         "passed": true,
         "pending": false,
         "os": "Mac OS X",
-        "instanceId": 51578,
+        "instanceId": 22389,
         "browser": {
             "name": "chrome",
-            "version": "80.0.3987.163"
+            "version": "95.0.4638.54"
         },
         "message": "Passed",
         "browserLogs": [
             {
                 "level": "WARNING",
-                "message": "https://demo.clickdoc.de/cd-de/scripts.5908aaef1db3a113210a.js 0 Invalid asm.js: Unexpected token",
-                "timestamp": 1585941648202,
+                "message": "https://demo.clickdoc.de/cd-de/scripts.eb9feeb5de98e90d7c80.js 0 Invalid asm.js: Unexpected token",
+                "timestamp": 1635760986490,
                 "type": ""
             }
         ],
-        "screenShotFile": "00f400d2-0049-008b-003b-001c007400ef.png",
-        "timestamp": 1585941637610,
-        "duration": 10589
-    },
-    {
-        "description": "Verify logout |UI Automation testing of ClickDOc Application",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed",
-        "browserLogs": [],
-        "screenShotFile": "00480058-0038-0094-00d8-002100780067.png",
-        "timestamp": 1585941648776,
-        "duration": 30210
-    },
-    {
-        "description": "Open Home Page|Searching Mechanism",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "00c30088-0035-0000-00e0-00fa00ac000f.png",
-        "timestamp": 1585941679789,
-        "duration": 525
-    },
-    {
-        "description": "Moved to Search Section|Searching Mechanism",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed",
-        "browserLogs": [],
-        "screenShotFile": "00980087-00fa-005a-003d-003800910082.png",
-        "timestamp": 1585941681197,
-        "duration": 1231
-    },
-    {
-        "description": "Verify Specialisation/Name Inputfield|Verify Search Section",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "004e0013-005e-0056-006d-00fa00900095.png",
-        "timestamp": 1585941683379,
-        "duration": 175
-    },
-    {
-        "description": "Verify Location Input Field|Verify Search Section",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "005200ba-00e5-00c3-0077-006000770071.png",
-        "timestamp": 1585941684623,
-        "duration": 28
-    },
-    {
-        "description": "Verify Online Bookable CheckBox|Verify Search Section",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "0000005e-0015-004d-00bc-00810080009d.png",
-        "timestamp": 1585941685213,
-        "duration": 27
-    },
-    {
-        "description": "Verify Video Conference CheckBox|Verify Search Section",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "00ae005b-009f-008d-00f6-00f5009900d5.png",
-        "timestamp": 1585941685777,
-        "duration": 24
-    },
-    {
-        "description": "Verify Barrier-Free CheckBox|Verify Search Section",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "00bb00ac-000a-0071-007b-001300080073.png",
-        "timestamp": 1585941686367,
-        "duration": 26
-    },
-    {
-        "description": "Verify Search Button|Verify Search Section",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "009d0047-0062-0054-0003-00d900e8007d.png",
-        "timestamp": 1585941687001,
-        "duration": 23
-    },
-    {
-        "description": "Verify Best Results Radio Box|Verify Sorting Section",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "004d0089-0065-00da-0016-0059004d0017.png",
-        "timestamp": 1585941687558,
-        "duration": 26
-    },
-    {
-        "description": "Verify Alphabetical Names Radio Box|Verify Sorting Section",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "0068000c-00e9-0019-001e-007600e200c6.png",
-        "timestamp": 1585941688103,
-        "duration": 19
-    },
-    {
-        "description": "Verify Distance Radio Box|Verify Sorting Section",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "006d0074-002e-0037-0071-00f200890090.png",
-        "timestamp": 1585941688659,
-        "duration": 23
-    },
-    {
-        "description": "Verify Distance-Range slider|Verify Sorting Section",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "00010003-007a-004c-0054-00f900ba0096.png",
-        "timestamp": 1585941689229,
-        "duration": 23
-    },
-    {
-        "description": "Verify Result Section with Notification for Physician Search|Verify Result Section",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "00ad00bb-00d5-00c7-0010-00ed00f70028.png",
-        "timestamp": 1585941689784,
-        "duration": 47
-    },
-    {
-        "description": "Select the \"Name\" Inputfield in the search section and enter any input|Physician Search",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "00600015-004c-00de-00ed-006b00160097.png",
-        "timestamp": 1585941690371,
-        "duration": 637
-    },
-    {
-        "description": "Search refinement step-2|Physician Search",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "001e00c7-00f3-0097-0009-00c1005e008b.png",
-        "timestamp": 1585941691583,
-        "duration": 672
-    },
-    {
-        "description": "Search with No Search result|Physician Search",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "008e006b-009d-004b-008c-00f800fc002c.png",
-        "timestamp": 1585941692813,
-        "duration": 10256
-    },
-    {
-        "description": "Check a search-result object|search-result",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "00870015-007c-002c-00fc-00cb00660022.png",
-        "timestamp": 1585941703599,
-        "duration": 5589
-    },
-    {
-        "description": "Scroll to the bottom of the page|search-result",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed",
-        "browserLogs": [],
-        "screenShotFile": "00ab0084-0049-00f9-007c-0046003500a6.png",
-        "timestamp": 1585941709756,
-        "duration": 21
-    },
-    {
-        "description": "Click the \"Show more\" -Button|search-result",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "00d5001d-005f-004e-003d-00c300800026.png",
-        "timestamp": 1585941710450,
-        "duration": 5107
-    },
-    {
-        "description": "Scroll back to the top and enter valid data into the \"Location\"-Inputfield|search-result",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "00b200f3-001a-00f1-00f9-00fb002000d2.png",
-        "timestamp": 1585941716120,
-        "duration": 890
-    },
-    {
-        "description": "Check the \"Online Bookable“-Checkbox|search-result",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "004e00e6-0099-0030-0053-002e00e90025.png",
-        "timestamp": 1585941717708,
-        "duration": 141
-    },
-    {
-        "description": "Click the \"Search-Button i.e with \" again|search-result",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "00d40073-00f3-0046-0031-008a00420043.png",
-        "timestamp": 1585941718548,
-        "duration": 5091
-    },
-    {
-        "description": "Searching with Video Conference availability of Doc|search-result",
-        "passed": false,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": [
-            "Expected false to be truthy.",
-            "Expected false to be truthy.",
-            "Expected false to be truthy.",
-            "Expected false to be truthy.",
-            "Expected false to be truthy.",
-            "Expected false to be truthy."
-        ],
-        "trace": [
-            "Error: Failed expectation\n    at SearchPage.SearchVideoConfAvailability (/Users/junaidkhan/clickdoc-bak/outputjs/Pages/SearchPage.js:158:118)\n    at UserContext.<anonymous> (/Users/junaidkhan/clickdoc-bak/outputjs/specs/PhysicianSearch-Test.js:90:20)\n    at /Users/junaidkhan/clickdoc-bak/node_modules/jasminewd2/index.js:112:25\n    at new ManagedPromise (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:1077:7)\n    at ControlFlow.promise (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:2505:12)\n    at schedulerExecute (/Users/junaidkhan/clickdoc-bak/node_modules/jasminewd2/index.js:95:18)\n    at TaskQueue.execute_ (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at /Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:2974:25",
-            "Error: Failed expectation\n    at SearchPage.SearchVideoConfAvailability (/Users/junaidkhan/clickdoc-bak/outputjs/Pages/SearchPage.js:160:41)\n    at UserContext.<anonymous> (/Users/junaidkhan/clickdoc-bak/outputjs/specs/PhysicianSearch-Test.js:90:20)\n    at /Users/junaidkhan/clickdoc-bak/node_modules/jasminewd2/index.js:112:25\n    at new ManagedPromise (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:1077:7)\n    at ControlFlow.promise (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:2505:12)\n    at schedulerExecute (/Users/junaidkhan/clickdoc-bak/node_modules/jasminewd2/index.js:95:18)\n    at TaskQueue.execute_ (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at /Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:2974:25",
-            "Error: Failed expectation\n    at SearchPage.SearchVideoConfAvailability (/Users/junaidkhan/clickdoc-bak/outputjs/Pages/SearchPage.js:161:96)\n    at UserContext.<anonymous> (/Users/junaidkhan/clickdoc-bak/outputjs/specs/PhysicianSearch-Test.js:90:20)\n    at /Users/junaidkhan/clickdoc-bak/node_modules/jasminewd2/index.js:112:25\n    at new ManagedPromise (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:1077:7)\n    at ControlFlow.promise (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:2505:12)\n    at schedulerExecute (/Users/junaidkhan/clickdoc-bak/node_modules/jasminewd2/index.js:95:18)\n    at TaskQueue.execute_ (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at /Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:2974:25",
-            "Error: Failed expectation\n    at SearchPage.SearchVideoConfAvailability (/Users/junaidkhan/clickdoc-bak/outputjs/Pages/SearchPage.js:162:112)\n    at UserContext.<anonymous> (/Users/junaidkhan/clickdoc-bak/outputjs/specs/PhysicianSearch-Test.js:90:20)\n    at /Users/junaidkhan/clickdoc-bak/node_modules/jasminewd2/index.js:112:25\n    at new ManagedPromise (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:1077:7)\n    at ControlFlow.promise (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:2505:12)\n    at schedulerExecute (/Users/junaidkhan/clickdoc-bak/node_modules/jasminewd2/index.js:95:18)\n    at TaskQueue.execute_ (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at /Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:2974:25",
-            "Error: Failed expectation\n    at SearchPage.SearchVideoConfAvailability (/Users/junaidkhan/clickdoc-bak/outputjs/Pages/SearchPage.js:163:96)\n    at UserContext.<anonymous> (/Users/junaidkhan/clickdoc-bak/outputjs/specs/PhysicianSearch-Test.js:90:20)\n    at /Users/junaidkhan/clickdoc-bak/node_modules/jasminewd2/index.js:112:25\n    at new ManagedPromise (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:1077:7)\n    at ControlFlow.promise (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:2505:12)\n    at schedulerExecute (/Users/junaidkhan/clickdoc-bak/node_modules/jasminewd2/index.js:95:18)\n    at TaskQueue.execute_ (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at /Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:2974:25",
-            "Error: Failed expectation\n    at SearchPage.SearchVideoConfAvailability (/Users/junaidkhan/clickdoc-bak/outputjs/Pages/SearchPage.js:165:41)\n    at UserContext.<anonymous> (/Users/junaidkhan/clickdoc-bak/outputjs/specs/PhysicianSearch-Test.js:90:20)\n    at /Users/junaidkhan/clickdoc-bak/node_modules/jasminewd2/index.js:112:25\n    at new ManagedPromise (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:1077:7)\n    at ControlFlow.promise (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:2505:12)\n    at schedulerExecute (/Users/junaidkhan/clickdoc-bak/node_modules/jasminewd2/index.js:95:18)\n    at TaskQueue.execute_ (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at /Users/junaidkhan/clickdoc-bak/node_modules/selenium-webdriver/lib/promise.js:2974:25"
-        ],
-        "browserLogs": [],
-        "screenShotFile": "006c00f3-00e6-00ef-00c9-0010004200d8.png",
-        "timestamp": 1585941724210,
-        "duration": 50722
-    },
-    {
-        "description": "Searching with Barrier Free|search-result",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "00a200df-00e7-0030-0076-002700820046.png",
-        "timestamp": 1585941775492,
-        "duration": 7153
-    },
-    {
-        "description": "Search Sorting with Aplhabatically A-Z|search-result",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed",
-        "browserLogs": [],
-        "screenShotFile": "00530058-00e4-0031-0063-004b00c50021.png",
-        "timestamp": 1585941783389,
-        "duration": 15098
-    },
-    {
-        "description": "Search Sorting with Aplhabatically Z-A|search-result",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed",
-        "browserLogs": [],
-        "screenShotFile": "00b50039-0034-0026-0027-00da00a60001.png",
-        "timestamp": 1585941799070,
-        "duration": 15060
-    },
-    {
-        "description": "Drag range slider without releasing it|search-result",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 51578,
-        "browser": {
-            "name": "chrome",
-            "version": "80.0.3987.163"
-        },
-        "message": "Passed",
-        "browserLogs": [],
-        "screenShotFile": "0093001b-006e-0065-000f-0010009d000f.png",
-        "timestamp": 1585941814711,
-        "duration": 35875
+        "screenShotFile": "002f00e6-0030-004f-00c1-0006001000e9.png",
+        "timestamp": 1635760978231,
+        "duration": 8325
     }
 ];
 

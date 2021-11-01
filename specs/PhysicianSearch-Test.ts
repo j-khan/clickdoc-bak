@@ -33,26 +33,25 @@ describe('Searching Mechanism', function(){
   it('Verify Video Conference CheckBox', function () { /* Verify Video Conference filter is present on page */
     searchPage.VerifyVideoConferenceCheckBox();
   })
-  it('Verify Barrier-Free CheckBox', function () {
+  it('Verify Barrier-Free CheckBox', function () { /* Verify Barrier Free filter is present on page */
     searchPage.VerifyBarrierFreeCheckBox();
   })
-  it('Verify Search Button', function () {
+  it('Verify Search Button', function () {  /* Verify Search Button is present on page */
     searchPage.VerifySearchButtonExist();
   })
 })
 
-
-describe('Verify Sorting Section', function () {
-  it('Verify Best Results Radio Box', function () {
-    searchPage.VerifyBestResultsRadioBox();
+describe('Verify Sorting Section', function () { /* This section will verify Sorting results */
+  it('Verify Best Results Radio Box', function () { /*Verify Radion button of Best Results */
+    searchPage.VerifyBestResultsRadioBox();   
   })
-  it('Verify Alphabetical Names Radio Box', function () {
+  it('Verify Alphabetical Names Radio Box', function () { /*Verify Aplhabatical sorting radio button */
     searchPage.VerifyAlphabeticalNamesRadioBox();
   })
-  it('Verify Distance Radio Box', function () {
+  it('Verify Distance Radio Box', function () { /*Verify Distance sorting radio button */
     searchPage.VerifyDistanceRadioBox();
   })
-  it('Verify Distance-Range slider', function () {
+  it('Verify Distance-Range slider', function () { /*Verify Distance sorting slide Bar */
     searchPage.VerifyDistanceRangeSlider();
   })
 })

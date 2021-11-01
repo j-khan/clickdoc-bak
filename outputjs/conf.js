@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.config = void 0;
 var HtmlReporter = require('protractor-beautiful-reporter');
 var SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 exports.config = {
@@ -8,7 +9,7 @@ exports.config = {
     suites: {
         mySuite: [
             './specs/Login-Test.js',
-            './specs/PhysicianSearch-Test.js'
+            //'./specs/PhysicianSearch-Test.js'
         ]
     },
     capabilities: {

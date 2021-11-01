@@ -1,21 +1,22 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SearchPage = void 0;
 var protractor_1 = require("protractor");
 var SearchPage = /** @class */ (function () {
     function SearchPage() {
-        this.SearchPageLink = protractor_1.element(protractor_1.by.linkText('Suchseite'));
-        this.SearchQueryTypeahead = protractor_1.element(protractor_1.by.id('search-query-typeahead'));
-        this.SearchLocationTypeahead = protractor_1.element(protractor_1.by.id('search-location-typeahead'));
-        this.OnlineBooking = protractor_1.element(protractor_1.by.id('onlineBooking'));
-        this.VideoCall = protractor_1.element(protractor_1.by.id('videoCall'));
-        this.Accessibility = protractor_1.element(protractor_1.by.id('accessibility'));
-        this.SerachButton = protractor_1.element(protractor_1.by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[1]/app-filter/div/div/div[2]/div[6]/div/button'));
-        this.BestHit = protractor_1.element(protractor_1.by.id('bestHit'));
-        this.SortAlphabetically = protractor_1.element(protractor_1.by.id('sortAlphabetically'));
-        this.NoLocation = protractor_1.element(protractor_1.by.id('noLocation'));
-        this.DistanceRangeSlider = protractor_1.element(protractor_1.by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[2]/app-sort/div/div/div[5]/div/div/ng5-slider'));
-        this.EmptySearchSpan = protractor_1.element(protractor_1.by.xpath('//*[@id="search"]/div/div[3]/div/div/app-empty-state/div/div[2]/div/span'));
-        this.SearchTypeaheadContainer = protractor_1.element(protractor_1.by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[1]/app-filter/div/div/div[2]/div[1]/div/div/typeahead-container'));
+        this.SearchPageLink = (0, protractor_1.element)(protractor_1.by.linkText('Suchseite'));
+        this.SearchQueryTypeahead = (0, protractor_1.element)(protractor_1.by.id('search-query-typeahead'));
+        this.SearchLocationTypeahead = (0, protractor_1.element)(protractor_1.by.id('search-location-typeahead'));
+        this.OnlineBooking = (0, protractor_1.element)(protractor_1.by.id('onlineBooking'));
+        this.VideoCall = (0, protractor_1.element)(protractor_1.by.id('videoCall'));
+        this.Accessibility = (0, protractor_1.element)(protractor_1.by.id('accessibility'));
+        this.SerachButton = (0, protractor_1.element)(protractor_1.by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[1]/app-filter/div/div/div[2]/div[6]/div/button'));
+        this.BestHit = (0, protractor_1.element)(protractor_1.by.id('bestHit'));
+        this.SortAlphabetically = (0, protractor_1.element)(protractor_1.by.id('sortAlphabetically'));
+        this.NoLocation = (0, protractor_1.element)(protractor_1.by.id('noLocation'));
+        this.DistanceRangeSlider = (0, protractor_1.element)(protractor_1.by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[2]/app-sort/div/div/div[5]/div/div/ng5-slider'));
+        this.EmptySearchSpan = (0, protractor_1.element)(protractor_1.by.xpath('//*[@id="search"]/div/div[3]/div/div/app-empty-state/div/div[2]/div/span'));
+        this.SearchTypeaheadContainer = (0, protractor_1.element)(protractor_1.by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[1]/app-filter/div/div/div[2]/div[1]/div/div/typeahead-container'));
         this.SearchTypeaheadContainerList = protractor_1.element.all(protractor_1.by.className('dropdown-item ng-star-inserted'));
         this.SearchDefaultPanel = protractor_1.element.all(protractor_1.by.className('card physician-card'));
     }
@@ -115,15 +116,15 @@ var SearchPage = /** @class */ (function () {
         protractor_1.browser.executeScript('window.scrollTo(0, document.body.scrollHeight|| document.documentElement.scrollHeight)');
     };
     SearchPage.prototype.ClickShowMoreButton = function () {
-        expect(protractor_1.element(protractor_1.by.xpath('//*[@id="search"]/div/div[3]/div/div/div/a')).isPresent()).toBeTruthy();
-        protractor_1.element(protractor_1.by.xpath('//*[@id="search"]/div/div[3]/div/div/div/a')).click();
+        expect((0, protractor_1.element)(protractor_1.by.xpath('//*[@id="search"]/div/div[3]/div/div/div/a')).isPresent()).toBeTruthy();
+        (0, protractor_1.element)(protractor_1.by.xpath('//*[@id="search"]/div/div[3]/div/div/div/a')).click();
         protractor_1.browser.waitForAngular();
         protractor_1.browser.sleep(5000);
     };
     SearchPage.prototype.ScrollTopEntervalidLocationInput = function (var_args) {
         protractor_1.browser.executeScript('window.scrollTo(0,0);');
         this.SetSearchLocationTypeahead(var_args);
-        var searchElement = protractor_1.element(protractor_1.by.className('locationSearch typeahead-wrapper'));
+        var searchElement = (0, protractor_1.element)(protractor_1.by.className('locationSearch typeahead-wrapper'));
         protractor_1.browser.waitForAngular();
         expect(searchElement.all(protractor_1.by.className('dropdown-item ng-star-inserted')).count())
             .toBeGreaterThanOrEqual(1);
@@ -132,10 +133,10 @@ var SearchPage = /** @class */ (function () {
         protractor_1.browser.waitForAngular();
     };
     SearchPage.prototype.SelectOnlineBooking = function () {
-        protractor_1.element(protractor_1.by.className("custom-control custom-checkbox")).click();
+        (0, protractor_1.element)(protractor_1.by.className("custom-control custom-checkbox")).click();
         protractor_1.browser.waitForAngular();
         expect(this.OnlineBooking).toBeTruthy();
-        expect(protractor_1.element(protractor_1.by.className('row onlineBooking no-gutters ng-star-inserted')).isPresent()).toBeTruthy();
+        expect((0, protractor_1.element)(protractor_1.by.className('row onlineBooking no-gutters ng-star-inserted')).isPresent()).toBeTruthy();
     };
     SearchPage.prototype.SelectOnlineBookingSearch = function () {
         this.SerachButton.click();
@@ -144,7 +145,7 @@ var SearchPage = /** @class */ (function () {
         protractor_1.browser.sleep(5000);
     };
     SearchPage.prototype.SearchVideoConfAvailability = function () {
-        protractor_1.element(protractor_1.by.className("custom-control custom-checkbox d-flex video-label text-alignment-center")).click();
+        (0, protractor_1.element)(protractor_1.by.className("custom-control custom-checkbox d-flex video-label text-alignment-center")).click();
         this.SearchQueryTypeahead.clear();
         this.SerachButton.click();
         protractor_1.browser.waitForAngular();
@@ -165,9 +166,9 @@ var SearchPage = /** @class */ (function () {
         expect(description.isPresent()).toBeTruthy();
     };
     SearchPage.prototype.SearchBarrierFreeAvailability = function () {
-        protractor_1.element(protractor_1.by.className("custom-control custom-checkbox")).click();
-        protractor_1.element(protractor_1.by.className("custom-control custom-checkbox d-flex video-label text-alignment-center")).click();
-        protractor_1.element(protractor_1.by.className("row mb-4 ng-star-inserted")).click();
+        (0, protractor_1.element)(protractor_1.by.className("custom-control custom-checkbox")).click();
+        (0, protractor_1.element)(protractor_1.by.className("custom-control custom-checkbox d-flex video-label text-alignment-center")).click();
+        (0, protractor_1.element)(protractor_1.by.className("row mb-4 ng-star-inserted")).click();
         this.SetSearchQueryTypeahead('Beate');
         this.SerachButton.click();
         protractor_1.browser.waitForAngular();
@@ -186,10 +187,10 @@ var SearchPage = /** @class */ (function () {
         expect(description.element(protractor_1.by.className("description-text")).isPresent()).toBeTruthy();
         var physicianCalendar = first.element(protractor_1.by.className("physician-calendar"));
         expect(description.isPresent()).toBeTruthy();
-        protractor_1.element(protractor_1.by.className("row mb-4 ng-star-inserted")).click();
+        (0, protractor_1.element)(protractor_1.by.className("row mb-4 ng-star-inserted")).click();
     };
     SearchPage.prototype.SortingWithAlphaSortAtoZ = function () {
-        protractor_1.element(protractor_1.by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[2]/app-sort/div/div/div[3]/div/div')).click();
+        (0, protractor_1.element)(protractor_1.by.xpath('//*[@id="search"]/div/div[2]/div[2]/div[2]/app-sort/div/div/div[3]/div/div')).click();
         protractor_1.browser.waitForAngular();
         protractor_1.browser.sleep(15000);
     };
@@ -204,7 +205,7 @@ var SearchPage = /** @class */ (function () {
         this.SerachButton.click();
         protractor_1.browser.waitForAngular();
         protractor_1.browser.sleep(15000);
-        var slider = protractor_1.element(protractor_1.by.className('custom-slider'));
+        var slider = (0, protractor_1.element)(protractor_1.by.className('custom-slider'));
         protractor_1.browser.actions().
             mouseDown(slider).
             mouseMove(slider).

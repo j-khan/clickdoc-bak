@@ -6,6 +6,8 @@ export class HomePage{
         browser.get("https://demo.clickdoc.de");
         browser.waitForAngular();
         expect(browser.getTitle()).toContain("CLICKDOC");
+        browser.sleep(3000);
+        element(by.xpath('/html/body/app-root/div[2]/app-consent-gdpr-container/app-modal-wrapper/div/div[2]/div[3]/button[1]')).click();
     }
      
     

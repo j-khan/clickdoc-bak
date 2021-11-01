@@ -8,7 +8,7 @@ export let config: Config={
     suites : {
       mySuite: [
           './specs/Login-Test.js',
-         './specs/PhysicianSearch-Test.js'
+         //'./specs/PhysicianSearch-Test.js'
       ]},
     capabilities: {
       browserName: 'chrome'

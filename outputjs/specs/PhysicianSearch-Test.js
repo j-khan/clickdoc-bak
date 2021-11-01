@@ -74,22 +74,22 @@ describe("search-result", function () {
     it('Scroll to the bottom of the page', function () {
         searchPage.ScrollToBottom();
     });
-    it('Click the "Show more" -Button', function () {
+    it('Click on  Show more Button', function () {
         searchPage.ClickShowMoreButton();
     });
-    it('Scroll back to the top and enter valid data into the "Location"-Inputfield', function () {
+    it('Scroll back to the top and enter valid data into the Location Input field', function () {
         searchPage.ScrollTopEntervalidLocationInput("56567");
     });
-    it('Check the "Online Bookable“-Checkbox', function () {
+    it('Check the "Online Bookable“ Checkbox', function () {
         searchPage.SelectOnlineBooking();
     });
-    it('Click the "Search-Button i.e with " again', function () {
+    it('Searching Online Bookable Doc ', function () {
         searchPage.SelectOnlineBookingSearch();
     });
     it('Searching with Video Conference availability of Doc', function () {
         searchPage.SearchVideoConfAvailability();
     });
-    it('Searching with Barrier Free', function () {
+    it('Searching with Barrier Free selection', function () {
         searchPage.SearchBarrierFreeAvailability();
     });
     it('Search Sorting with Aplhabatically A-Z', function () {
@@ -98,7 +98,7 @@ describe("search-result", function () {
     it('Search Sorting with Aplhabatically Z-A', function () {
         searchPage.SortingWithAlphaSortZtoA();
     });
-    it('Drag range slider without releasing it', function () {
+    it('Distance range slider', function () {
         searchPage.DragRangeSlider("Beate", "56567");
     });
 });
